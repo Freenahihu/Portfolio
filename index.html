@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+       
+        .nav {
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
+
+        .nav img {
+            width: 90px;
+        }
+
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .nav ul li {
+            list-style: none;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 17px;
+            width: 400px;
+        }
+
+        .banner {
+            width: 100%;
+            background-color: #fff5f5;
+            display: flex;
+
+        }
+
+        
+        .banner .inner {
+            width: 1200px;
+            margin: 0 auto;
+            /* background-color:aquamarine; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .banner .text-box {
+            width: 500px;
+            /* background-color: bisque; */
+
+        }
+
+        .banner .text-box h1 {
+            color: rgb(69, 69, 69);
+            font-size: 65px;
+            font-weight: 900;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .banner .text-box p {
+            color: rgb(69, 69, 69);
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+        .banner .text-box button {
+            width: 140px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-top: 30px;
+            background-color: rgb(69, 69, 69);
+            border: none;
+            color: white;
+            font-size: 16px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .Featured {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20PX;
+        }
+
+        .about {
+            background-color: #fff5f5;
+            padding-block: 80px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .about-text {
+            text-align: center;
+            width: 900px;
+            margin: 0 auto;
+        }
+
+
+        .service {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            text-align: start;
+
+        }
+
+
+
+        .Read {
+            color: white;
+            background-color: black;
+            margin: 20px;
+            padding: 10px;
+            border: none;
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+
+
+        .hero{
+            width: 800px;
+            margin: 0 auto;
+            display: flex;
+            
+            /* flex-wrap: wrap; */ 
+                    /* apply in media query */
+
+                   
+
+            justify-content: space-between;
+        }
+
+        #paragraf {
+           
+            align-items: center;
+            margin-top:50px;
+            
+        }
+
+       #text{
+        text-align: center;
+       }
+       
+        #ready{
+            background-color: #fff5f5;
+            padding: 50px;
+        }
+        #lorem{
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        
+        }
+
+        #p1{
+            width: 40%;
+            font-size: small;
+            padding-top: 10%;
+        }
+
+        #p2{
+            width: 40%;
+            font-size: small;
+            padding-top: 10%;
+        }
+
+        #p3{
+            width: 40%;
+            font-size: small;
+            padding-top: 10%;
+        }
+
+        #p4{
+            width: 40%;
+            font-size: small;
+            padding-top: 10%;
+        }
+
+        #blog{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 60%;
+            margin: 0 auto;
+        }
+        #blog-text{
+            margin-top: 100px;
+            width:45%;
+        }
+
+        #blog-text  h1{
+         margin-bottom: 10%;   
+        }
+
+        .nick{
+            background-color: #fff5f5;
+        }
+
+        .nicollas{
+            padding: 5%;
+            width: 65%;
+            margin:0 auto;
+            display: flex;
+        }
+
+        .nicollas-text{
+            margin: 8%;
+           font-size: small;
+        }
+        
+        .moreimg{
+            padding: 5%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            }
+
+        .icon{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .icona{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1%;
+            margin-bottom: 3%;
+        }
+        </style>
+
+</head>
+
+
+<body>
+    <div class="nav">
+        <img src="img1.png" alt="">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">ABOUTME</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">BLOG</a></A></li>
+        </ul>
+    </div>
+
+
+    <div class="banner">
+        <div class="inner">
+            <div class="text-box">
+                <h1>hello so good to see you</h1>
+                <p>I help small and mediam-size businesses grow their audience and brand recorgnition throught social
+                    media. </p>
+                <button>Contact me</button>
+            </div>
+            <div class="img-box">
+                <img src="img2.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="Featured">
+        <h1>Featured</h1>
+        <h1> ani Ha</h1>
+        <h1> eno fiv</h1>
+        <h1> OXEM</h1>
+    </div>
+
+    <div class="about">
+        <div class="about-text">
+            <h1>My name is Dovile</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ullam eligendi minus
+                in obcaecati quibusdam! Nostrum voluptates dolorum, culpa praesentium facilis quas
+                nulla eveniet cumque sed quaerat dolore, tempora, perspiciatis quam commodi
+                laboriosam odio vero eum? Molestiae temporibus fuga, velit quod provident facilis?
+                Reprehenderit aliquam, et quidem eveniet impedit, repellat soluta deleniti autem
+                aliquid atque? Quidem illo et sint similique minima sed deserunt unde. </p>
+        </div>
+    </div>
+
+
+      <div class="hero">
+        <div class="service">
+            <img src="img3.png" alt="">
+         </div>
+         <div>
+            <p id="paragraf">
+            <h1 id="serv">Service</h1> <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Vitae quia sequi in corrupti tenetur, laborum quaerat culpa
+            tempora aperiam laudantium quas ut libero, nihil similique
+            quis voluptatibus quae labore quibusdam.
+            </p>
+            <button class="Read">Read more</button>
+        </div>
+    </div>  
+
+
+
+    <div id="ready">
+        <h1 id="text">Are you ready to...</h1>
+        <div id="lorem">
+        <p  id="p1"> <b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quibusdam?</b> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti natus sint eum maiores architecto ullam aperiam, accusantium molestiae doloribus reiciendis </p> <br>
+        <p id="p2">  <b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quibusdam?</b> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti natus sint eum maiores architecto ullam  </p>
+        <p id="p3"> <b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quibusdam?</b> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti natus sint eum maiores </p>
+        <p id="p4">  <b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quibusdam?</b> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti natus sint eum maiores architecto ullam aperiam. </p>    
+    </div>
+    </div>
+
+    <div id="blog">
+        <div id="blog-text">
+           <h1> My blog  </h1>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error praesentium esse.   </p>
+           <button class="Read">Read blog</button>
+        </div>
+        <div>
+            <img src="img4.png" alt="">
+        </div>
+    </div>
+
+    <div class="nick">
+    <div class="nicollas">
+        <div class="nicollas-img">
+            <img src="img5.png" alt="">
+            </div>
+            <div class="nicollas-text">
+            <p>"We want from having zero online presence  to domination our niche
+                on Google. As a technophobe i never throught  we could to it, but 
+                currently social media amount's for the mejority of our sales."</p>
+                <br><br>
+                <p><b>Nicollas Ductom</b> <br>
+                Director of Corpoate MarketingForge Inc.</p>
+          </div>
+    </div>
+</div>
+
+<div class="moreimg">
+    <div class="onlyimg">
+        <img src="img6.png" alt="" width="150px">
+        <img src="img7.png" alt="" width="150px">
+        <img src="img8.png" alt="" width="150px">
+        <img src="img9.png" alt="" width="150px">
+
+    </div>
+</div>
+
+<div class="icon">
+    <i class="fa-brands fa-twitter"></i>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <i  class="fa-brands fa-facebook"></i>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <i class="fa-brands fa-instagram"></i>
+</div>
+
+<div class="icona">
+    <a href="#">Terms of servic</a>
+</div>
+
+
+
+</body>
+</html>
